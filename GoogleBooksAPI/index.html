@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Search Google Books</title>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <section>
+        <!--Title-->
+        <div class="row text-center">
+            <h1 class="">What books are you interested in?</h1>
+        </div>
+        <form>
+            <fieldset>
+                <br>
+                <!--Label and text input-->
+                <div class="form-group row justify-content-center">
+                    <label for="keyword" class="col-sm-1 col-form-label center-align">Keyword</label>
+                    <div class="col-sm-4 col-md-3">
+                        <input type="text" name="keyword" id="keyword" placeholder="Comedy" class="form-control">
+                    </div>
+                </div>
+                <!--Error Message-->
+                <div class="row justify-content-center">
+                    <div id="error-msg" class="col-sm-4 col-md-3 offset-1 invisble"></div>
+                </div>
+                <br>
+                <!--Buttons-->
+                <div class="row justify-content-center">
+                    <button type="button" class="btn btn-primary col-sm-1" onclick="getBooks()">Search</button>
+                    <button type="reset" class="btn btn-danger col-sm-1">Reset</button>
+                </div>
+            </fieldset>
+        </form>
+        <div id="book-shelf">
+
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

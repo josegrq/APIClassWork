@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.has-error {
+    background-color: rgb(216, 119, 119);
+    border: 3px solid red;
+}
+
+.error-message {
+    color: red;
+    font-weight: bolder;
+}
+
+.invisible {
+    display: none;
+}
+.center-align {
+    text-align: center;
+}
